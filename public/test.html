@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Eat-Da-Burger</title>
+		<!--<link rel="stylesheet" href="../../public/assets/css/burger_style.css">-->
+		<style>
+			html, body {
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				height: 100%;
+			}
+			body {
+				background: linear-gradient(#fff, #ffed8c);
+				text-align: center;
+				font-family: sans-serif;
+			}
+			img {
+				margin-top: 50px;
+				width: 250px;
+			}
+			h1 {
+				color: orangered;
+			}
+			table {
+				width: 100%;
+			}
+			tr {
+				height: 40px;
+			}
+			td {
+				vertical-align: top;
+			}
+			input {
+				height: 25px;
+				width: 280px;
+			}
+			button {
+				background-color: green;
+				font-weight: bold;
+				color: #fff;
+				cursor: pointer;
+			}
+			button:hover {
+				background-color: yellowgreen;
+				color: #000;
+			}
+			.devourIt {
+				margin-top: 10px;
+				margin-left: 40px;
+				height: 25px;				
+			}
+			.devoured {
+				margin-top: 10px;
+				width: 280px;
+			}
+			form {
+				position: relative;
+				display: block;
+				margin-top: 30px;
+			}
+			textarea {
+				height: 29px;
+				width: 300px;
+				font-size: 1.2em;
+				font-weight: bold;
+				vertical-align: middle;
+			}
+			#submit {
+				width: 100px;
+				height: 35px;
+			}
+			h2 {
+				font-size: 1em;
+			}
+		</style>
+	</head>
+	<body>
+		<!--<img src="../public/assets/img/burger.png" alt="">-->
+        <img src="assets/img/burger.png" alt="">                
+        <h1>Eat-Da-Burger!</h1>
+
+		<!-- Database results -->
+		<table>
+			<tr>
+				<td>
+					<input type="text" value="">
+					<button type="button" class="devourIt">Devour It!</button><br>
+
+					<input type="text" value="">
+					<button type="button" class="devourIt">Devour It!</button><br>
+
+					<input type="text" value="">
+					<button type="button" class="devourIt">Devour It!</button><br>
+				</td>
+				<!-- Devoured results -->
+				<td>
+					<input type="text" class="devoured" value=""><br>
+				</td>
+			</tr>
+        </table>
+
+        <form action="/" method="POST">
+            <textarea type="text" name="burger_name"></textarea>
+
+            <button type="submit" id="submit">SUBMIT</button>
+        </form>
+
+        <h2>Enter a burger you want to eat and click the 'Submit' button</h2>
+	</body>
+</html>
